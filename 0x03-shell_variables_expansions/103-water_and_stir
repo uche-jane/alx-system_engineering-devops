@@ -1,3 +1,2 @@
 #!/bin/bash
-sum=$((water2dec $WATER + stir2dec $STIR))
-dec2bestchol $sum
+sum=$(water2dec $WATER)+$(stir2dec $STIR); dec2bestchol $((sum))
